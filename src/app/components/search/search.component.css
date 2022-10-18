@@ -1,0 +1,41 @@
+.row {
+    padding-bottom: 10px;
+}
+
+:host ::ng-deep .search-btn>.p-button {
+    width: 100% !important;
+}
+
+.center {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+:host ::ng-deep .p-datatable .p-datatable-thead>tr>th {
+
+    text-align: center !important;
+}
+
+:host ::ng-deep .p-datatable .p-datatable-tbody>tr>td {
+
+    text-align: center !important;
+}
+
+:host ::ng-deep .p-component,
+.p-component * {
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+:host ::ng-deep .p-dropdown {
+    width: 80% !important;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 10px 0 10px;
+}
