@@ -1,0 +1,25 @@
+:host ::ng-deep .p-dropdown {
+    width: 100% !important;
+}
+
+:host ::ng-deep input {
+    width: 100% !important;
+}
+
+.row {
+    padding-bottom: 10px;
+}
+
+.container {
+    direction: rtl;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+}

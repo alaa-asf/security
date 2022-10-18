@@ -9,10 +9,12 @@ import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { InputWantedComponent } from './components/input-wanted/input-wanted.component';
+import { WantedDataComponent } from './components/input-wanted/wanted-data/wanted-data.component';
+import { WantedDocsComponent } from './components/input-wanted/wanted-docs/wanted-docs.component';
 
 @NgModule({
   declarations: [
-    AppComponent,SearchComponent,HomeComponent,InputWantedComponent
+    AppComponent,SearchComponent,HomeComponent,InputWantedComponent,WantedDataComponent,WantedDocsComponent
   ],
   imports: [
     BrowserModule,

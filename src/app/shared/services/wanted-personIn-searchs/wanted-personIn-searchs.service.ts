@@ -9,8 +9,11 @@ export class WantedPersonInSearchsService extends BaseComponent {
     super(injector);
   }
 
-  search(data:any){
+  search(data: any) {
     return this.HttpClient.post<any>(this.url + '/api/WantedPersonInSearchs/Search', data);
   }
 
+  add(data: any) {
+    return this.HttpClient.post<any>(this.url + '/api/WantedPersonInSearchs', data);
+  }
 }

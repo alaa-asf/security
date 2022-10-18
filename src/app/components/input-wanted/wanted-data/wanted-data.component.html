@@ -1,0 +1,217 @@
+<div class="container">
+  <form [formGroup]="inputForm" dir="rtl">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>الاسم الاول</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="firstName" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>الكنية</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="lastName" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>اسم الاب</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="fatherName" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>اسم الام</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="motherName" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>الاسم الكامل</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="fullName" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>اللقب</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="surName" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>الرقم الوطني</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="nationalID" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>الرقم العسكري</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="militaryID" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>تاريخ الولادة</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="bitrthPlaceDate" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>الساحة</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="square" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>المدينة</p>
+        </div>
+        <div class="col-sm-8">
+          <p-dropdown appendTo="body" [options]="cities" optionLabel="name" optionValue="value"
+            formControlName="city" [virtualScrollItemSize]="30" placeholder="اختر المدينة"
+            (onChange)="checkSearchSite($event)"></p-dropdown>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>القرية</p>
+        </div>
+        <div class="col-sm-8">
+          <p-dropdown appendTo="body" [options]="towns" optionLabel="name" optionValue="value"
+            formControlName="town" [virtualScrollItemSize]="30" placeholder="اختر القرية"
+            (onChange)="checkSearchSite($event)"></p-dropdown>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>المكان</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="place" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>العنوان</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="address" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>العنوان الدائم</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="persistentAddress" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>المهنة</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="job" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>الملاحظات</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="observation" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>رقم الهاتف</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="phone" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>الجوال</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="mobile" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>ينتمي إلى</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="belongTo" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>الموظف المنشئ</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="rowCreatedUserName" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>تاريخ الانشاء</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="rowCreatedDate" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>الموظف المعدل</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="rowUpdatdedUserName" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>تاريخ التعديل</p>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" pInputText formControlName="rowUpdatedDate" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 center">
+          <p>الجنسية</p>
+        </div>
+        <div class="col-sm-8">
+          <p-dropdown appendTo="body" [options]="nationalities" optionLabel="name" optionValue="value"
+            formControlName="nationality" [virtualScrollItemSize]="30" placeholder="اختر الجنسية"
+            (onChange)="checkSearchSite($event)"></p-dropdown>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p-button class="search-btn" type="text" (click)="addWanted(inputForm.value)" label="اضافة"></p-button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
