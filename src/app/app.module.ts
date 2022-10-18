@@ -8,7 +8,7 @@ import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { InputWantedComponent } from './components/input-wanted/input-wanted/input-wanted.component';
+import { InputWantedComponent } from './components/input-wanted/input-wanted.component';
 
 @NgModule({
   declarations: [

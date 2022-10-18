@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
-import { InputWantedComponent } from './components/input-wanted/input-wanted/input-wanted.component';
+import { InputWantedComponent } from './components/input-wanted/input-wanted.component';
 
 const routes: Routes = [
   { path: 'search', component: SearchComponent },
